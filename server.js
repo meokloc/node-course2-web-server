@@ -53,6 +53,13 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page',
   });
 })
+
+app.get('/projects', (req, res) => {
+  res.render('about.hbs', {
+    header: 'Projects',
+    pageTitle: 'Projects',
+  });
+})
 app.get('/services', (req, res) => {
   res.render('services.hbs', {
     header: 'Service Page',
